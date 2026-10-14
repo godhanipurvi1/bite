@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+.legal {
+  --ink: #211b17;
+  --paper: #faf3e7;
+  --paper-dim: #f0e6d4;
+  --saffron: #f2a93b;
+  --chili: #d64b2a;
+  --basil: #4f7a52;
+  --ink-soft: #6b5f55;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Work Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  max-width: 720px;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 6vw, 2rem) 5rem;
+}
+
+.legal * {
+  box-sizing: border-box;
+}
+
+.legal__header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed var(--paper-dim);
+}
+
+.legal__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--chili);
+  margin: 0 0 0.75rem;
+}
+
+.legal__header h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  margin: 0 0 0.75rem;
+}
+
+.legal__intro {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  margin: 0;
+  max-width: 580px;
+}
+
+.legal-section {
+  margin-bottom: 2rem;
+}
+
+.legal-section h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.legal-section p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin: 0;
+}

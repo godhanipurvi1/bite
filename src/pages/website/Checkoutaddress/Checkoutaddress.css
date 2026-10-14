@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@400;500;600&display=swap");
+
+.c-address {
+  --ink: #211b17;
+  --paper: #faf3e7;
+  --paper-dim: #f0e6d4;
+  --saffron: #f2a93b;
+  --chili: #d64b2a;
+  --basil: #4f7a52;
+  --ink-soft: #6b5f55;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Work Sans", sans-serif;
+
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  max-width: 640px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3rem) clamp(1.5rem, 6vw, 2rem) 4rem;
+}
+
+.c-address * {
+  box-sizing: border-box;
+}
+
+.c-address__header {
+  margin-bottom: 2rem;
+}
+
+.c-address__header h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  margin: 0 0 0.4rem;
+}
+
+.c-address__header p {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.c-address__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.address-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  text-align: left;
+  background: #fff;
+  border: 1.5px solid var(--paper-dim);
+  border-radius: 14px;
+  padding: 1.1rem 1.2rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.address-card:hover {
+  border-color: var(--saffron);
+}
+
+.address-card.is-selected {
+  border-color: var(--chili);
+  box-shadow: 0 0 0 3px rgba(214, 75, 42, 0.1);
+}
+
+.address-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--paper);
+  color: var(--chili);
+  flex-shrink: 0;
+}
+
+.address-card__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.address-card__type {
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.address-card__line {
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.address-card__area {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.address-card__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--chili);
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.add-address-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: none;
+  border: 1.5px dashed var(--paper-dim);
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--chili);
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.add-address-card:hover {
+  border-color: var(--chili);
+}
+
+.add-address-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--paper-dim);
+  flex-shrink: 0;
+}
+
+.c-address__continue {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: var(--chili);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.95rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.c-address__continue:hover {
+  background: #b83c1f;
+  transform: translateY(-1px);
+} 
